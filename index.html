@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cafe - LandingPage</title>
+</head>
+
+<body>
+    <section>
+        <header>
+            <a href="#" class="logo">Café pronto</a>
+            <div class="toggleMenu" onclick="toggleMenu();"></div>
+            <ul class="navigation">
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Reward</a></li>
+                <li><a href="#">Gift cards</a></li>
+            </ul>
+        </header>
+        <div class="contant">
+            <div class="contantBx">
+                <h2>50 YEARS, TOGETHER</h2>
+                <p>Since 1971, you’ve helped us see what’s possible. <br>
+                     Every cup, every conversation, every day. <br>
+                     Cheers to you.</p>
+                    <a href="#">Explore</a>
+            </div>
+        </div>
+        <ul class="icons">
+            <li><a href="#"><img src="facebook.png" alt="facebook"></a></li>
+            <li><a href="#"><img src="instagram.png" alt="instagram"></a></li>
+            <li><a href="#"><img src="twitter.png" alt="twitter"></a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+    function toggleMenu() {
+        const toggleMenu = document.querySelector('.toggleMenu');
+        const navigation = document.querySelector('.navigation');
+        toggleMenu.classList.toggle('active');
+        navigation.classList.toggle('active');
+    }
+    </script>
+</body>
+
+</html>
